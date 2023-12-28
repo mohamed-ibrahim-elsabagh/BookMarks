@@ -1,0 +1,112 @@
+/* ========= global ============= */
+:root{
+    --mainColor:#FEC260;
+    scroll-padding-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+ul li 
+{
+    list-style: none;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
+
+}
+body
+{
+    background-color: #F7ECDE;
+}
+
+/* ========= section ============= */
+.main-bookmark
+{
+    font-size: 60px;
+    font-family: 'Amatic SC', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+position: relative;
+
+
+
+}
+.main-bookmark::after
+{
+    content:"";
+    display: flex;
+    height: 25%;
+    width: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.8s;
+    
+}
+.main-bookmark:hover.main-bookmark::after
+{    
+
+    height: 70%;
+}
+
+.Bookmarkfav
+{
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip : text  ;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-bookmark
+{
+    font-size: 35px;
+}
+
+.btn-submit
+{
+    background-color: #D1512D ;
+
+}
+.btn-submit:hover
+{
+    background-color:#bb4120;
+}
+.circle1,.circle2,.circle3
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}
+.circle1
+{
+    background: #F15F5D;
+
+}
+.circle2
+{
+    background: #FEBE2E;
+    
+}
+.circle3
+{
+    background: #4DB748;
+    
+}
+.fa-circle-right
+{
+    color: #F15F5D;
+
+}

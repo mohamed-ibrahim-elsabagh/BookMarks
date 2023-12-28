@@ -1,0 +1,136 @@
+<html>
+    <head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@800&family=Lobster&family=Open+Sans&family=Pacifico&display=swap"
+            rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+
+        
+    </head>
+    <body>
+
+    <section>
+        <div class="container ">
+    
+            <!------------------ main Website Name --------------->
+            <div class="main-bookmark-body d-flex justify-content-center align-items-center my-5 flex-column ">
+    
+                <h1 class="main-bookmark"> Bookmarker </h1>
+                
+    
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <i class="fa-solid fa-bookmark Bookmarkfav"></i>
+                <h2 class="mx-3 fs-3 Bookmarkfav"> Bookmark your favorite sites </h2>
+                <i class="fa-solid fa-bookmark Bookmarkfav"></i>
+            </div>
+
+            <!------------------ Inputs  --------------->
+            <div class="inputs">
+
+                <i class="fa-solid fa-file-signature"></i>
+                <label class="py-2 fw-bolder" for="siteName" >  Site Name </label>
+                <input id="bookSiteName" class="form-control mb-4" type="text" placeholder="Bookmark Name">
+
+
+                <i class="fa-solid fa-link"></i>
+                <label class="py-2 fw-bolder" for="siteUrl">  Site URL </label>
+                <input id="bookSiteUrl" class="form-control" type="text" placeholder="Website URL" >
+
+            </div>
+
+            <div class="justify-content-center align-content-center d-flex">
+                <button class="btn btn-submit p-2 my-4 px-5 fw-bold text-white" id="btnSubmit" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" >Submit</button>
+            </div>
+
+
+
+            <!------------------ modal overlay  --------------->
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="d-flex justify-content-center align-items-center column-gap-2">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                      </div>
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bolder fs-5">Site Name or Url is not valid, Please follow the rules below :</p>
+                        <p class="fs-5 text-muted"> <i class="fa-regular fa-circle-right mx-1"></i>Site name must contain at least 3 characters.</p>
+                        <p class="fs-5 text-muted"> <i class="fa-regular fa-circle-right mx-1"></i>Site URL must be a valid one.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+
+              <!------------------ table --------------->
+
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+            
+                    </tr>
+                </thead>
+
+                <tbody id="tableContent">
+
+                </tbody>
+
+            </table>
+            
+    
+    
+
+
+
+
+            
+            <!-- <button class="btnVisit btn btn-secondary" id="btnUpdate" >Update</button> -->
+            
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+     <script src="js/mine.js"></script>
+    </body>
+</html>
